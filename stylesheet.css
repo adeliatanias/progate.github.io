@@ -1,3 +1,203 @@
-.title {
-    color: #02ccba;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+JP:wght@100;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+::selection{
+  background: rgba(23,162,184,0.3);
+}
+
+.wrapper{
+  padding:32px 9%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heading2{
+  font-family: 'Noto Sans', sans-serif;
+  letter-spacing: 3px;
+  font-size:24px;
+  text-align: center;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+.wrapper .box{
+  background: #fff;
+  width: calc(33% - 10px);
+  padding: 25px;
+  border-radius: 3px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+  font-family: 'Poppins', sans-serif;
+}
+.wrapper .box i.quote{
+  font-size: 20px;
+  color: #31CFBC;
+}
+.wrapper .box .content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.box .info .name{
+  font-weight: 600;
+  font-size: 17px;
+}
+.box .info .job{
+  font-size: 16px;
+  font-weight: 500;
+  color: #31CFBC;
+}
+.box .info .stars{
+  margin-top: 2px;
+}
+.box .info .stars i{
+  color: #31CFBC;
+}
+.box .content .image{
+  height: 75px;
+  width: 75px;
+  padding: 3px;
+  background: #31CFBC;
+  border-radius: 50%;
+}
+.content .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.box:hover .content .image img{
+  border-color: #fff;
+}
+@media (max-width: 1045px) {
+  .wrapper .box{
+    width: calc(50% - 10px);
+    margin: 10px 0;
   }
+}
+@media (max-width: 702px) {
+  .wrapper .box{
+    width: 100%;
+  }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+JP:wght@100;300;500&display=swap');
+
+*{
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none; border:none;
+  text-decoration: none;
+}
+
+*::selection{
+  color:#fff;
+}
+
+section{
+  padding:32px 9%;
+}
+
+.heading{
+  font-family: 'Noto Sans', sans-serif;
+  text-align: center;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-Top:20px;
+  padding-bottom:25px;
+}
+
+.contact .row{
+  display: flex;
+  flex: auto;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contact .row .image{
+  flex:1 1 320px;
+  align-items: center;
+  text-align: center;
+}
+
+.contact .row .image img{
+  width:80%;
+  margin: 0 auto;
+  
+}
+
+.contact .row form{
+  flex:1 1 320px;
+  padding:32px;
+  box-shadow: 0 16px 32px rgba(0,0,0,.1);
+  border-radius: 8px;
+}
+
+.contact .row form .inputBox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact .row form .inputBox input, .contact .row form textarea{
+  width:49%;
+  margin:8px 0;
+  padding:8px;
+  font-size: 16px;
+  color:#333;
+  background:#f7f7f7;
+  text-transform: none;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.contact .row form textarea{
+  height: 128px;
+  padding-bottom:80px;
+  resize: none;
+  width:100%;
+}
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 1;
+  background: #ff4a52;
+
+}
+.message {
+  background: #1ec6b6;
+  color: #fff;
+  display: inline-block;
+  padding: 18px 41px;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  border: 0;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
