@@ -11,12 +11,95 @@ body{
   margin: 0;
 }
 
+li {
+  list-style: none;
+}
+
+header{
+  height: 85px;
+  width: 100%;
+  background-color: white;
+  color: black;
+  position : fixed;
+  z-index: 5;
+  top : 0;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+}
+
+.header-left{
+  float: left;
+}
+
+
+.logo{
+  width: 122px;
+  padding : 10px 5px;
+  }
+
+  .header-right {
+    float: right;
+    margin-right: 10px;
+  }
+
+  .header-right a{
+    float: left;
+    line-height: 65px;
+    padding: 10px 20px;
+    font-family: 'Noto Sans';
+    display: block;
+    color:black;
+    transition: all 0.5s;
+  }
+
+  .header-right a:hover{
+    color:#31CFBC;
+    transition: all 0.1s;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    cursor: default;
+  }
+  
+  .menu-icon {
+    color: black;
+    float: right;
+    font-size: 30px;
+    padding: 35px 30px;
+    display: none;
+  }
+
+  .fa {
+    margin-right: 5px;
+    margin-top: -10px;
+    transition: all 0.3s;
+  }
+
+  .fa:hover{
+    margin-right: 5px;
+    color: #1ec6b6;
+    transition: all 0.3s;
+  }
+
+
 a {
   text-decoration: none;
 }
 
+@media (max-width: 1000px){
+    
+}
+@media (max-width: 670px){
+    .header-right{
+        display: none;
+      }
+
+    .menu-icon{
+        display: block;
+      }
+}
+
+
 .container {
-  max-width: 1170px;
+  max-width: 190px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
@@ -27,10 +110,18 @@ a {
     background-image: url(img/banner.jpeg);
     background-size: cover;
     background-position: fixed;
-    height: 600px;
+    height: 762px;
     color: white;
     text-align: center;
     position: relative;
+    
+}
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
 }
 
 .top-wrapper::after {
@@ -48,15 +139,17 @@ a {
     z-index: 1;
 }
 .top-wrapper h1 {
-    font-size: 25px;
+    font-size: 40px;
     letter-spacing: 8px;
     font-family: 'gloss', sans-serif;
+    margin-top: 20px;
   }
 
   .top-wrapper p {
-      font-size: 15px;
+      font-size: 20px;
       font-family: 'Noto Sans', sans-serif;
       letter-spacing: 5px;
+      margin-top: 20px;
   }
 
   .btn-wrapper {
@@ -73,11 +166,12 @@ a {
   margin-top:65px;
   font-family: 'Noto Sans', sans-serif;
   background-color: rgba(49, 207, 188, 0.75);
+  transition: all 0.3s;
 }
 
 .start:hover {
     background-color: rgba(255, 74, 82, 1);
-    transition: 0.3s;
+    transition: all 0.3s;
     opacity: 1;
 }
 /* Tablet */
@@ -90,8 +184,6 @@ a {
       font-size: 15px;
   }
 }
-
-
 
 /* Smartphone */
 @media all and (max-width: 670px) {
@@ -108,7 +200,110 @@ a {
    }
 }
 
+.heading1{
+  font-family: 'Noto Sans', sans-serif;
+  letter-spacing: 3px;
+  font-size:24px;
+  padding-left: 55px;
+    padding-right: 55px;
+  text-align: center;
+}
 
+.heading1h4{
+  margin-bottom: 30px;
+  color: darkgray;
+  font-family: 'Noto Sans', sans-serif;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size:15px;
+}
+
+.destination {
+  float: left;
+  width: 25%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.destination img{
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+}
+
+.dest-name {
+  margin-top: 10px;
+  font-size: 20px;
+  margin-top: 1px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.text-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 15px;
+  color: #b3aeb5;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.book{
+  padding: 10px 70px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50px;
+  text-align: center;
+  margin-top:20px;
+  font-family: 'Noto Sans', sans-serif;
+  background-color: #1ec6b6;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.more{
+  padding: 10px 70px;
+  color: white;
+  display: inline-block;
+  border-radius: 50px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-family: 'Noto Sans', sans-serif;
+  background-color: rgba(49, 207, 188, 0.75);
+  transition: all 0.3s;
+}
+
+.more:hover{
+  opacity: 1;
+  background: #ff4a52;
+  transition: all 0.3s;
+}
+
+.book:hover{
+  opacity: 1;
+  background: #ff4a52;
+  transition: all 0.3s;
+}
+
+@media (max-width: 1045px) {
+  .destination {
+    width: 50%;
+  }
+
+  .more{
+    width: 75%;
+  }
+}
+@media (max-width: 702px) {
+  .destination {
+    width: 100%;
+  }
+
+  .more{
+    width: 100%
+  }
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+JP:wght@100;300;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
@@ -211,7 +406,7 @@ a {
 
 *{
   box-sizing: border-box;
-  text-transform: capitalize;
+  text-transform:none;
   outline: none; border:none;
   text-decoration: none;
 }
@@ -294,9 +489,10 @@ section{
 .btn:hover {
   opacity: 1;
   background: #ff4a52;
-
+  transition: all 0.3s;
 }
 .message {
+  width: 100%;
   background: #1ec6b6;
   color: #fff;
   display: inline-block;
@@ -308,6 +504,7 @@ section{
   border-radius: 5px;
   text-align: center;
   cursor: pointer;
+  transition: all 0.3s;
 }
 
 li {
